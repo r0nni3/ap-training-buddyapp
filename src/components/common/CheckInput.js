@@ -40,6 +40,7 @@ const styles = {
     textDecorationLine: 'none',
     textAlign: 'left',
     color: '#4a4a4a',
+    letterSpacing: 0.3,
   }
 };
 

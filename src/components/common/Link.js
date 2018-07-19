@@ -34,6 +34,7 @@ const styles = {
     textDecorationLine: 'underline',
     textAlign: 'center',
     color: '#4a4a4a',
+    letterSpacing: 0.3,
   }
 };
 
