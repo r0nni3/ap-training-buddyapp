@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
-import {ScrollView, View, Text, Image, StyleSheet, TouchableWithoutFeedback} from 'react-native';
-import {Button} from '../components/Button'
-import {Input} from '../components/Input'
-import {CheckInput} from '../components/CheckInput'
-import {Link} from '../components/Link'
+import {
+  ScrollView, View, Text, Image, StyleSheet, TouchableWithoutFeedback
+} from 'react-native';
+import {Button, Input, CheckInput, Link} from '../components/common';
 // import { store } from '../state';
 
 class SessionScreen extends Component {
@@ -35,7 +34,7 @@ class SessionScreen extends Component {
             <Input placeholder="password" isSecure={true} />
           </View>
           <CheckInput label="remember email" />
-          <View style={styles.buttonContainer}>
+          <View style={styles.buttonContainerLessMargin}>
             <Button
               style={styles.buttonLogin}
               onPress={() => console.log('logincalls')}>
@@ -138,6 +137,12 @@ const styles = StyleSheet.create({
   buttonContainer: {
     height: 50,
     marginTop: 30,
+    marginLeft: 60,
+    marginRight: 60
+  },
+  buttonContainerLessMargin: {
+    height: 50,
+    marginTop: 16,
     marginLeft: 60,
     marginRight: 60
   },
