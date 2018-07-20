@@ -22,7 +22,7 @@ const styles = {
     height: 40,
     flex: 1,
     flexDirection: 'row',
-    borderBottomWidth: 2,
+    borderBottomWidth: 1,
     borderBottomColor: '#00a7bf'
   },
   textInput: {
