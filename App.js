@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import {createStackNavigator} from 'react-navigation';
 import { store } from './src/state';
 // import {MainScreen} from './src/main';
-// import {OnBoardingScreen} from './src/onboarding';
+import onboarding from './src/onboarding';
 import session from './src/session';
 
 // const instructions = Platform.select({
@@ -16,10 +16,10 @@ import session from './src/session';
 
 const AppStack = createStackNavigator({
   // Main: MainScreen,
-  // OnBoarding: OnBoardingScreen,
+  OnBoarding: onboarding.screen,
   Session: session.screen
 }, {
-  initialRouteName: 'Session'
+  initialRouteName: 'OnBoarding'
 });
 
 export default class App extends Component {
